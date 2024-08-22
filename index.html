@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Detection - TensorFlow.js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pose Detection with TensorFlow.js</h1>
+        <div class="controls">
+            <button id="toggleCamera">Switch Camera</button>
+        </div>
+        <div class="video-container">
+            <video id="video" autoplay></video>
+            <canvas id="output"></canvas>
+        </div>
+    </div>
+    <footer>
+        Created by Anshuman Mishra
+    </footer>
+
+    <!-- Include TensorFlow.js dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+    <!-- Main script -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
